@@ -87,17 +87,17 @@ WSGI_APPLICATION = "transaction_management.wsgi.application"
 
 
 ## For Locally
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
 
 ##For production
-# DATABASES = {
-#     'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
-# }
+DATABASES = {
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+}
 
 
 # Password validation
