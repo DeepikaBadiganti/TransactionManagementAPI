@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv('SECRET_KEY', 'default-secret-key')
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'transactionmanagementapi.onrender.com').split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'transactionmanagementapi-475s.onrender.com').split(',')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
